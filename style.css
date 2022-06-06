@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=PT+Sans&display=swap');
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .container 
+  {
+    display: flex;
+    flex-direction: column;
+    background: url('./img/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .animated
+  {
+    font-family: 'Charm', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 8rem;
+    background: url(./img/gold_stripes.jpg) no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 30s linear infinite;
+    -webkit-animation: moveBg 30s linear infinite;
+  }
+
+  /*------- Text Bg Animation---------*/
+
+  @keyframes moveBg
+  {
+      0%
+      {
+          background-position: 0% 30%;
+      }
+      100%
+      {
+          background-position: 100% 50%;
+      }
+  }
